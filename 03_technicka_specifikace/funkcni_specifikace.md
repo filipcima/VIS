@@ -38,16 +38,11 @@ Předpokládáme, že počet uživatelů se měnit nijak dramaticky nebude. Čas
 
 ## Minimální požadavky
 ### Koncový zákazník
-Intel Atom X5 Z8300 1,84 GHz
-
-4GB DDR3, 32GB eMMC,
-
-1xUSB 3.0, 3x USB 2.0, Gbit LAN, SD, Dual AC Wifi, BT 4.0, Audio out, HDMI 1.4, Mini DP,
-
-Windows 10 (64-bit)
+- Intel Atom X5 Z8300 1,84 GHz
+- 4GB DDR3, 32GB eMMC
+- 1x USB 3.0, 3x USB 2.0, Gbit LAN, SD, Dual AC Wifi, BT 4.0, Audio out, HDMI 1.4, Mini DP
+- Windows 10 (64-bit)
 ### Databázový server 
-1x vCPU up to 1,8 GHz
-
-2 GB RAM, 32GB SSD
-
-OS Debian 8/Ubuntu 16.04
+- 1x vCPU up to 1,8 GHz
+- 2 GB RAM, 32GB SSD
+- OS Debian 8/Ubuntu 16.04
