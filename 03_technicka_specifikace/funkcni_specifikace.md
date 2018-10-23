@@ -37,6 +37,9 @@ Celkový přibližný stav za 1 měsíc: `99 * 660 B = 65 340 B ≈ 63.85 kB`.
 
 Předpokládáme, že počet uživatelů se měnit nijak dramaticky nebude. Časem budou růst pouze kolekce __superior_plans__, __user_plans__, __production_plans__, __delete_requests__, __change_requests__ a to lineárně.
 
+## Údržba
+Údržba bude probíhat v noci mezi 2:00-3:00. Automatické generování plánu bude probíhat v noci dne, který specifikuje nadřízený.
+
 ## Charakteristika uživatelů pracujících se systémem
 Se systémem budou pracovat 3 typy uživatelů - __admin__, __zaměstnanec__, __nadřízený__.
 
@@ -46,11 +49,13 @@ __Nadřízený__ může zobrazit seznam svých zaměstnanců, jejich plány. Vyt
 
 __Administrátor__ bude moci vytvářet uživatelské účty, provádět CRUD operace nad veškerými daty.
 
+## Odhad maximální zátěže aplikace
+S aplikací bude zároveň pracovat maximálně celkový počet uživatelů. Předpokládaná průměrná zátěž je 10-20% počtu uživatelů z celkového součtu. 
+
 ## Minimální požadavky
-### Koncový zákazník
+### Koncový zákazník - zaměstnanec, vedoucí zaměstnanec
 - Intel Atom X5 Z8300 1,84 GHz
 - 4GB DDR3, 32GB eMMC
-- 1x USB 3.0, 3x USB 2.0, Gbit LAN, SD, Dual AC Wifi, BT 4.0, Audio out, HDMI 1.4, Mini DP
 - Windows 10 (64-bit)
 ### Databázový server 
 - 1x vCPU up to 1,8 GHz
