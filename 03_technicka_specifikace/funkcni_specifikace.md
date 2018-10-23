@@ -13,7 +13,7 @@ DB bude obsahovat následující dokumenty:
 - __users__
     - kolekce pro zaměstnance a nadřízené
 - __superior_plans__
-    - plán na následující období vytvořen nadřízenym
+    - plán na následující období vytvořený nadřízenym
 - __user_plans__
     - plán vytvořen zaměstnancem na základě __superior_plan__
 - __production_plans__
@@ -25,14 +25,17 @@ DB bude obsahovat následující dokumenty:
 ### Náročnost
 Přibližná velikost jednoho dokumentu = 660 B
 
-Přibližny počet dokumentů za měsíc
+Přibližny počet dokumentů za měsíc u firmy s cca __32 zaměstnanci__:
 - `users + admins = 40`
 - `superior_plans = 2`
 - `user_plans = 30`
 - `production_plans = 2`
 - `delete_requests + change_requests = 25`
 
-Celkovy přibližny narust za 1 měsíc: `99 * 660 B = 65 340 B ≈ 65.3 kB`.
+Celkový přibližný stav za 1 měsíc: `99 * 660 B = 65 340 B ≈ 65.3 kB`.
+
+Předpokládáme, že počet uživatelů se měnit nijak dramaticky nebude. Časem budou růst pouze kolekce __superior_plans__, __user_plans__, __production_plans__, __delete_requests__, __change_requests__ a to lineárně.
+
 ## Minimální požadavky
 Mini počítač Intel Atom X5 Z8300 1,84 GHz
 4GB DDR3, 32GB eMMC,
