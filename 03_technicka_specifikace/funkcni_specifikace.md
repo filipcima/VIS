@@ -23,7 +23,7 @@ DB bude obsahovat následující dokumenty:
 - __change_requests__
     - kolekce, kde budou zaznamenány žádosti o změny
 ### Náročnost
-Přibližná velikost jednoho dokumentu = 120 B
+Přibližná velikost jednoho dokumentu = 660 B
 
 Přibližny počet dokumentů za měsíc
 - `users + admins = 40`
@@ -32,7 +32,7 @@ Přibližny počet dokumentů za měsíc
 - `production_plans = 2`
 - `delete_requests + change_requests = 25`
 
-Celkovy přibližny narust za 1 měsíc: `99 * 120 B = 11 880 B = 11.6 kB`.
+Celkovy přibližny narust za 1 měsíc: `99 * 660 B = 65 340 B ≈ 65.3 kB`.
 ## Minimální požadavky
 Mini počítač Intel Atom X5 Z8300 1,84 GHz
 4GB DDR3, 32GB eMMC,
