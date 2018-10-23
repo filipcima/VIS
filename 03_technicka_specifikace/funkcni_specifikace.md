@@ -6,6 +6,7 @@
 - Desktopová aplikace: .NET Framework 4.5
 - Webová aplikace: ASP.NET Framework
 ## Databáze
+Objektová DB se hodí více, protože struktura dat bude různorodá.
 ### Model
 DB bude obsahovat následující dokumenty:
 - __admins__
@@ -35,6 +36,15 @@ Přibližny počet dokumentů za měsíc u firmy s cca __32 zaměstnanci__:
 Celkový přibližný stav za 1 měsíc: `99 * 660 B = 65 340 B ≈ 63.85 kB`.
 
 Předpokládáme, že počet uživatelů se měnit nijak dramaticky nebude. Časem budou růst pouze kolekce __superior_plans__, __user_plans__, __production_plans__, __delete_requests__, __change_requests__ a to lineárně.
+
+## Charakteristika uživatelů pracujících se systémem
+Se systémem budou pracovat 3 typy uživatelů - __admin__, __zaměstnanec__, __nadřízený__.
+
+__Zaměstnanec__ může zobrazit produkční plán, zobrazit plán svého nadřízeného, vytvořit osobní plán, upravit osobní plán, posílat žádosti o výměnu/smazání směny.
+
+__Nadřízený__ může zobrazit seznam svých zaměstnanců, jejich plány. Vytvořit plán na následující období. Zobrazovat a upravovat produkční plán, schvaluje žádosti o smazání směny.
+
+__Administrátor__ bude moci vytvářet uživatelské účty, provádět CRUD operace nad veškerými daty.
 
 ## Minimální požadavky
 ### Koncový zákazník
